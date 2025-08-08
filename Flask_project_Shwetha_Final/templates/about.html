@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://www.mindteck.com/">Mindteck</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('services')}}">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Technology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('contactform')}}">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Industries
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Medical science</a></li>
+              <li><a class="dropdown-item" href="#">Life science</a></li>
+              <li><a class="dropdown-item" href="#">Semiconductor</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <div class="banner text-center" style="padding: 2em; background-image: url('static/images/banner.jpg');color:white;"">
+         <img src="static/images/logo.jpg" alt="Mindteck Logo" align="left" >
+           <h1><center>My about Page</center></h1>
+          <p><center>Expertise in embedded systems, enterprise applications and testing!</center></p>
+  </div>
+<br>
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-4 mb-3 border border-primary rounded p-3 bg-danger bg-light" >
+      <h3>Who we are?</h3>
+      <p>We are the global engineering and technology solutions company devoted to delivering knowledge that matters to help clients compete, </p>
+      <p>innovate and propel forward along the digital continuum.</p>
+    </div>
+    <div class="col-sm-4 mb-3 border border-success rounded p-3 bg-success bg-opacity-10">
+      <h3>Corporate Social Responsibility</h3>
+      <p>We Care is Mindteck's framework for honoring commitments and making a lasting difference throughout the organization, as well as externally to clients, partners and communities. The cornerstones of the framework are Knowledge, Opportunity, Advocacy, Inclusion, Goodwill and Respect.</p>
+    </div>
+    <div class="col-sm-4 mb-3 border border-warning rounded p-3 bg-opacity-25">
+      <h3>Our global footprint</h3>
+      <p>Our global footprint spans the US (California, New Jersey, Missouri, Florida and Pennsylvania), Canada (Ontario), India (Bengaluru, Kolkata, Mumbai), Europe (United Kingdom and Germany), the APAC region (Singapore, Malaysia and Philippines), and Middle East (Bahrain). We also have two Development Centers – Kolkata and Bengaluru.</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" >
+
+    <p>© 2025 Mindteck. All Rights Reserved</p>
+</div>
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
